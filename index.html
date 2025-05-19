@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Daksh Singh</h1>
+    <p id="greeting"></p>
+    <div class="media-container">
+      <img src="dakshphoto.jpg" alt="My Photo" class="profile-photo floating" />
+      <video controls class="intro-video floating">
+        <source src="portfoliovideo.mp4.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <a href="#about" class="button">Know More About Me</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p><strong>Name:</strong> Daksh Singh</p>
+    <p><strong>Location:</strong> Boisar, Palghar</p>
+    <p><strong>Education:</strong> B.Tech in Electronics & Computer Science</p>
+    <p><strong>Languages Known:</strong> English, Hindi, Marathi</p>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Won 2nd Prize in Laser Tag at Megalio 2024</li>
+      <li>Won 1st Prize in BGMI at Prasang</li>
+      <li>Contributed to open-source projects</li>
+    </ul>
+  </section>
+
+  <section id="goals">
+    <h2>Future Goals</h2>
+    <ul>
+      <li>Become a full-stack developer</li>
+      <li>Contribute to large-scale open-source projects</li>
+      <li>Launch a tech blog</li>
+    </ul>
+  </section>
+
+  <section id="personal">
+    <h2>Personal Side</h2>
+    <ul>
+      <li>Hobbies: Gaming (PUBG, BGMI, Valorant, chess, mind games, puzzles), singing, driving, riding bikes, watching Hindi movies.</li>
+      <li>Model: Coding with Harry — for providing free educational resources to help India's youth learn coding and become successful software engineers.</li>
+      <li>Favorite Books: Revolution of India in Developing Technology, Modern Era of AI, Cybersecurity, Ethical Hacking.</li>
+      <li>Startups: NVIDIA, AMD</li>
+      <li>Volunteering Experience: Developing a free educational website to teach hardware development and coding for students and beginners.</li>
+      <li>Role Model: Virat Kohli — I chose him as my role model because of his dedication and discipline toward his goals.</li>
+      <li>Favorite Book: Atomic Habits by James Clear</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Daksh Singh</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/daksh-singh-525a24366/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <img src="LINKEDIN.png" alt="LinkedIn" class="social-icon"/>
+      </a>
+      <a href="https://www.instagram.com/your-instagram-id" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <img src="instagramlogo.avif" alt="Instagram" class="social-icon"/>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Dynamic greeting based on time of day
+    const greetingElement = document.getElementById('greeting');
+    const hour = new Date().getHours();
+    let greetingText = 'Hello!';
+
+    if (hour >= 5 && hour < 12) {
+      greetingText = 'Good Morning!';
+    } else if (hour >= 12 && hour < 17) {
+      greetingText = 'Good Afternoon!';
+    } else if (hour >= 17 && hour < 21) {
+      greetingText = 'Good Evening!';
+    } else {
+      greetingText = 'Good Night!';
+    }
+
+    greetingElement.textContent = `${greetingText} I'm Daksh Singh, a second-year Electronics and Computer Science student with a passion for coding and innovation.`;
+  </script>
+</body>
+</html>
